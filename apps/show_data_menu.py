@@ -1,7 +1,7 @@
+import data.data
+import tabulate
+
 def main() -> str:
-  '''
-  This function usage for first display
-  ret
-  '''
-  
+  print(tabulate.tabulate(data.data.getListData(), headers="keys", tablefmt="grid"))
+  print()
   return ""
