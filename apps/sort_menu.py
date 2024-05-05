@@ -1,5 +1,6 @@
-from data.data import sortData, Column
+from data.data import sort_data, Column
 from tabulate import tabulate
+
 
 def display_menu():
     print(" Data Mahasiswa")
@@ -10,19 +11,20 @@ def display_menu():
     print("5. Keluar")
     print()
 
+
 def main() -> str:
     display_menu()
     user_input = input(" Jenis pengurutan (Masukkan angka) [1-5] : ")
     if user_input in ("1", "2", "3", "4", "5"):
         # Melakukan pengurutan data berdasarkan pilihan pengguna
         if user_input == "1":
-            sorted_data = sortData(Column.NIM)
+            sorted_data = sort_data(Column.NIM)
         elif user_input == "2":
-            sorted_data = sortData(Column.NAME)
+            sorted_data = sort_data(Column.NAME)
         elif user_input == "3":
-            sorted_data = sortData(Column.MAJOR)
+            sorted_data = sort_data(Column.MAJOR)
         elif user_input == "4":
-            sorted_data = sortData(Column.YEAR)
+            sorted_data = sort_data(Column.YEAR)
         else:
             print("Keluar")
             return user_input

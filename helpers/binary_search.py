@@ -1,4 +1,6 @@
-def binary_search(list, value, key):
+from enum import Enum
+
+def binary_search(list, value, key) -> tuple:
     start = 0
     last = len(list) - 1
     result_index = []
@@ -21,16 +23,14 @@ def binary_search(list, value, key):
                 result_index.append(i)
                 i += 1
 
-            for i in result_index:
-                result.append(list[i])
-            return result
+        
+            break
         elif list[middle][key] < value:
             start = middle + 1
         else:
             last = middle - 1
 
     for i in result_index:
-        print(i)
         result.append(list[i])
 
-    return result
+    return (result_index, result)

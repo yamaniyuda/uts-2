@@ -15,7 +15,7 @@ def add_feture_handle() -> None:
   if not validate:
     raise ValueError("Semua field inputan wajib diisi")
 
-  data.data.addData({
+  data.data.add_data({
     "nim": nim.lower(),
     "name": name.lower(),
     "place_date_birth": f"{place_birth}, {date_birth}",

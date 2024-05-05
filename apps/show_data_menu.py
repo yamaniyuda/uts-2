@@ -1,8 +1,8 @@
-from data.data import getListData
+from data.data import get_list_data
 from tabulate import tabulate
 
 def main() -> None:
-  table = tabulate(getListData(), headers="keys", tablefmt="heavy_outline",showindex="always")
+  table = tabulate(get_list_data(), headers="keys", tablefmt="heavy_outline")
   print(table)
   input()
   return None

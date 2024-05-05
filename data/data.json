@@ -1,38 +1,42 @@
-  {
-      "colleger": [
-          {
-              "nim": "ab",
-              "name": "ahd yuda zaki yamani",
-              "place_date_birth": "binjai, 11 11 2004",
-              "major": "teknik informatika",
-              "year": "2024"
-          },
-          {
-              "nim": "aa",
-              "name": "ahmad zakui",
-              "place_date_birth": "binjai, 11 11 2004",
-              "major": "teknik informatika",
-              "year": "2024"
-          },
-          {
-              "nim": "am",
-              "name": "ahmad adi",
-              "place_date_birth": "binjai, 11 11 2004",
-              "major": "teknik informatika",
-              "year": "2024"
-          },
-          {
-              "nim": "ak",
-              "name": "ahd yuda zaki yamani",
-              "place_date_birth": "binjai, 11 11 2004",
-              "major": "teknik informatika",
-              "year": "2021"
-          },
-          {
+{
+    "colleger": [
+        {
+            "nim": "aa",
+            "name": "ahmad zakui",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2024"
+        },
+        {
+            "nim": "ab",
+            "name": "ahd yuda zaki yamani",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2024"
+        },
+        {
             "nim": "ak",
             "name": "ahmad budi",
             "place_date_birth": "binjai, 11 11 2004",
             "major": "teknik informatika",
+            "year": "2021"
+        },
+        {
+            "nim": "ak",
+            "name": "ahd yuda zaki yamani",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2021"
+        },
+        {
+            "nim": "am",
+            "name": "ahmad adi",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "1111"
+        }
+    ]
+}nik informatika",
             "year": "2021"
         }
       ]
