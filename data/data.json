@@ -1,39 +1,39 @@
-{
-    "colleger": [
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
+  {
+      "colleger": [
+          {
+              "nim": "ab",
+              "name": "ahd yuda zaki yamani",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2024"
+          },
+          {
+              "nim": "aa",
+              "name": "zakui",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2024"
+          },
+          {
+              "nim": "am",
+              "name": "adi",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2024"
+          },
+          {
+              "nim": "ak",
+              "name": "ahd yuda zaki yamani",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2021"
+          },
+          {
+            "nim": "ak",
+            "name": "budi",
             "place_date_birth": "binjai, 11 11 2004",
             "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231111759",
-            "name": "nurihsan febrianto",
-            "place_date_birth": "sedie jadi, 16 februari 2005",
-            "major": "teknik informatika",
-            "year": "2023"
+            "year": "2021"
         }
-    ]
-}
+      ]
+  }
