@@ -13,10 +13,10 @@ def main() -> str:
     user_input = input("Pilih opsi urutan [1-2]: ")
 
     if user_input == "1":
-        nim = input("Masukkan NIM: ")
+        nim = input("Masukkan NIM: ").lower
         result = data.searchData(data.Column.NIM, nim)  
     elif user_input == "2":
-        name = input("Masukkan Nama: ")
+        name = input("Masukkan Nama: ").lower
         result = data.searchData(data.Column.NAME, name)
     else:
         raise ValueError("Inputan tidak valid")
