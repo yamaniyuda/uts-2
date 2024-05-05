@@ -10,20 +10,20 @@
         {
             "nim": "ab",
             "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
+            "place_date_birth": "binjai, 10 11 2004",
+            "major": "sistem informasi",
+            "year": "2000"
         },
         {
             "nim": "ak",
-            "name": "ahmad budi",
+            "name": "ahd yuda zaki yamani",
             "place_date_birth": "binjai, 11 11 2004",
             "major": "teknik informatika",
             "year": "2021"
         },
         {
             "nim": "ak",
-            "name": "ahd yuda zaki yamani",
+            "name": "ahmad budi",
             "place_date_birth": "binjai, 11 11 2004",
             "major": "teknik informatika",
             "year": "2021"
@@ -36,8 +36,4 @@
             "year": "1111"
         }
     ]
-}nik informatika",
-            "year": "2021"
-        }
-      ]
-  }
+}

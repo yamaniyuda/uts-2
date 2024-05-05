@@ -54,14 +54,14 @@ def update_data(index, value):
     data = sort_data(Column.NIM)
     data[index] = value
 
-    print(data[index])
-    input()
-
     with open(os.path.join(script_dir, rel_path)) as file:
         data_source = json.load(file)
 
     data_source["colleger"] = data
+    
+
     with open(os.path.join(script_dir, rel_path), 'r+') as file:
+        file.truncate(0)
         file.seek(0)
         json.dump(data_source, file, indent=4)
 

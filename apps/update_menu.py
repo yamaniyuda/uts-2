@@ -25,12 +25,12 @@ def update_data_feature(data_source):
 
   place, date = prev_data["place_date_birth"].strip().split(',')
 
-  # if date_birth.strip():
-  #   data_update["place_date_birth"] = f"{place}, {date_birth}"
-  # if place_birth.strip():
-  #   data_update["place_date_birth"] = f"{place_birth}, {date}"
-  # if place_birth.strip() and date_birth.strip():
-  #   data_update["place_date_birth"] = f"{place_birth}, {date_birth}"
+  if date_birth.strip():
+    data_update["place_date_birth"] = f"{place}, {date_birth}"
+  if place_birth.strip():
+    data_update["place_date_birth"] = f"{place_birth}, {date}"
+  if place_birth.strip() and date_birth.strip():
+    data_update["place_date_birth"] = f"{place_birth}, {date_birth}"
 
 
   data.update_data(data_source[0][0], data_update)
