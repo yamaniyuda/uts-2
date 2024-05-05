@@ -1,5 +1,3 @@
-
-
 def binary_search(list, value, key):
     start = 0
     last = len(list) - 1
@@ -11,13 +9,13 @@ def binary_search(list, value, key):
         if list[middle][key].startswith(value):
             result_index.append(middle)
 
-            # Cek apakah ada entri yang cocok di sebelah kiri
+            # check match entry in left
             i = middle - 1
             while i >= 0 and list[i][key].startswith(value):
                 result_index.append(i)
                 i -= 1
 
-            # Cek apakah ada entri yang cocok di sebelah kanan
+            # check match entry in right
             i = middle + 1
             while i < len(list) and list[i][key].startswith(value):
                 result_index.append(i)

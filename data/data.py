@@ -31,7 +31,7 @@ def addData(new_data) -> None:
         data = json.load(file)
 
     data["colleger"].append(new_data)
-    print(data)
+    data["colleger"] = sortData(Column.YEAR)
 
     with open(os.path.join(script_dir, rel_path), 'r+') as file:
         file.seek(0)
