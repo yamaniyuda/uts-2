@@ -23,23 +23,28 @@ def getListData() -> set:
     return data
 
 
-def addData(new_data) -> None:
+def addData(new_data) -> bool:
     script_dir = os.path.dirname(__file__)
     rel_path = 'data.json'
 
     with open(os.path.join(script_dir, rel_path)) as file:
         data = json.load(file)
 
+    if len(searchData(Column.NIM, new_data["nim"])) > 0:
+        raise ValueError("Data NIM telah ada, gunakan NIM yang lain")
+
     data["colleger"].append(new_data)
-    data["colleger"] = sortData(Column.YEAR)
+    data["colleger"] = sortData(Column.YEAR, quict_sort.Sort.DSC)
 
     with open(os.path.join(script_dir, rel_path), 'r+') as file:
         file.seek(0)
         json.dump(data, file, indent=4)
 
+    return None
 
-def sortData(column: Column) -> list:
-    return quict_sort.quicksort(getListData(), column.value)
+
+def sortData(column: Column, sort: quict_sort.Sort = quict_sort.Sort.ASC) -> list:
+    return quict_sort.quicksort(getListData(), column.value, sort)
 
 
 def searchData(column: Column, value: str):
