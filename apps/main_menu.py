@@ -8,29 +8,15 @@ def display_menu():
     print("6. Keluar")
     print()
 
-def main() ->str:
-    while True:
-        display_menu()
-        user_input = input("Masukkan pilihan menu [1-6]: ")
-        if user_input == "1":
-            print("Tambah Data Mahasiswa")
-        elif user_input == "2":
-            print("Tampilkan Data Mahasiswa")
-        elif user_input == "3":
-            print("Ubah Data Mahasiswa")
-        elif user_input == "4":
-            print("Urutkan Data Mahasiswa")
-        elif user_input == "5":
-            print("Cari Data Mahasiswa")
-        elif user_input == "6":
-            print("Keluar")
-            break
-        else:
-            print("Input tidak valid. Harap masukkan angka 1-6.")
-        print()
+def main() -> str:
+    display_menu()
+    user_input = input("Masukkan pilihan menu [1-6]: ")
+    if user_input in ("1", "2", "3", "4", "5", "6"):
+        return user_input
+    else:
+        print("Input tidak valid. Harap masukkan angka 1-6.")
+        return main()  # Rekursif, memanggil fungsi lagi jika input tidak valid
 
 if __name__ == "__main__":
-    main()
-
-
-  
+    user_choice = main()
+    print("Pilihan pengguna:", user_choice)

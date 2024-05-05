@@ -8,9 +8,9 @@ import data.data
 
 
 def initial() -> None:
+    root_menu: str = None
     while True:
-        root_menu: str = None
-
+        
         match root_menu:
             case '1': root_menu = apps.add_menu.main()
             case '2': root_menu = apps.show_data_menu.main()
