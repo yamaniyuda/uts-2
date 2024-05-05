@@ -15,7 +15,7 @@ def main() -> str:
         return user_input
     else:
         print("Input tidak valid. Harap masukkan angka 1-6.")
-        return main()  # Rekursif, memanggil fungsi lagi jika input tidak valid
+        return main()
 
 if __name__ == "__main__":
     user_choice = main()

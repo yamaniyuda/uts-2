@@ -1,6 +1,5 @@
 import data.data
-
-from helpers.check_data_null import check_data_null
+from helpers.check_data_not_null import check_data_not_null
 
 
 def add_feture_handle() -> None:
@@ -11,18 +10,23 @@ def add_feture_handle() -> None:
   major = input("{:<30}:".format("Program Study") + " ")
   year = input("{:<30}:".format("Tahun Masuk") + " ")
 
-  check_data_null(nim, name, place_birth, date_birth, major, year)
+  validate = check_data_not_null(nim, name, place_birth, date_birth, major, year)
+
+  if not validate:
+    print("Semua field inputan wajib diisi")
+    return add_feture_handle()
+
+  # data.data.addData({
+  #   "nim": 
+  # })
+  
+  return None
   
 
+
 def main() -> str:
-  '''
-  This function usage for first display
-  ret
-  '''
-  
   print("="*60)
   print("Tambah Data Mahasiswa")
   print("="*60)
 
-  add_feture_handle()
-  return ""
+  return add_feture_handle()
