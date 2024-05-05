@@ -18,7 +18,6 @@ def initial() -> None:
             case '5': root_menu = apps.search_menu.main()
             case '6': break
             case  _ : root_menu = apps.main_menu.main()
-        print("kk")
         os.system('cls' if os.name == 'nt' else 'clear')
 
 
