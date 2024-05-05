@@ -2,7 +2,7 @@ from data.data import sortData, Column
 from tabulate import tabulate
 
 def display_menu():
-    print("Aplikasi Data Mahasiswa")
+    print(" Data Mahasiswa")
     print("1. NIM ")
     print("2. Nama")
     print("3. Program Studi")
