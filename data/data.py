@@ -1,6 +1,6 @@
 import json
 import os
-from helpers.quict_sort import quicksort
+from helpers import binary_search, quict_sort
 from enum import Enum
 
 
@@ -39,4 +39,10 @@ def addData(new_data) -> None:
 
 
 def sortData(column: Column) -> list:
-    return quicksort(getListData(), column.value)
+    return quict_sort.quicksort(getListData(), column.value)
+
+
+def searchData(column: Column, value: str):
+    sort = sortData(column)
+    result = binary_search.binarySearch(sort, 0, len(sort) - 1, value, column.value)
+    return sort[result]

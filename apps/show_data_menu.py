@@ -1,7 +1,8 @@
-import data.data
-import tabulate
+from data.data import getListData
+from tabulate import tabulate
 
 def main() -> None:
-  print(tabulate.tabulate(data.data.getListData(), headers="keys", tablefmt="grid"))
+  table = tabulate(getListData(), headers="keys", tablefmt="heavy_outline")
+  print(table)
   input()
   return None
