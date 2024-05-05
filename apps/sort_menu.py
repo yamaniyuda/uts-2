@@ -1,7 +1,9 @@
+import data.data
+import tabulate
+
+
 def main() -> str:
-  '''
-  This function usage for first display
-  ret
-  '''
-  
+  print(tabulate.tabulate(data.data.sortData(data.data.Column.YEAR), headers="keys", tablefmt="grid"))
+
+  input()
   return ""

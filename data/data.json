@@ -1,32 +1,32 @@
-{
-    "colleger": [
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "231112933",
-            "name": "ahd yuda zaki yamani",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        }
-    ]
-}
+  {
+      "colleger": [
+          {
+              "nim": "ab",
+              "name": "ahd yuda zaki yamani",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2024"
+          },
+          {
+              "nim": "aa",
+              "name": "ahd yuda zaki yamani",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2024"
+          },
+          {
+              "nim": "am",
+              "name": "ahd yuda zaki yamani",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2024"
+          },
+          {
+              "nim": "ak",
+              "name": "ahd yuda zaki yamani",
+              "place_date_birth": "binjai, 11 11 2004",
+              "major": "teknik informatika",
+              "year": "2021"
+          }
+      ]
+  }
