@@ -44,5 +44,6 @@ def sortData(column: Column) -> list:
 
 def searchData(column: Column, value: str):
     sort = sortData(column)
-    result = binary_search.binarySearch(sort, 0, len(sort) - 1, value, column.value)
-    return sort[result]
+    result = binary_search.binary_search(sort, value, column.value)
+
+    return result

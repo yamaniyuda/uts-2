@@ -1,12 +1,38 @@
-def binarySearch(arr, l, r, x, key):
-    if r >= l:
-        mid = l + (r - l) // 2
-        if arr[mid][key] == x:
-            return mid
-        elif arr[mid][key] > x:
-            return binarySearch(arr, l, mid-1, x, key)
-        else:
-            return binarySearch(arr, mid + 1, r, x, key)
 
-    else:
-        return -1
+
+def binary_search(list, value, key):
+    start = 0
+    last = len(list) - 1
+    result_index = []
+    result = []
+
+    while start <= last:
+        middle = (start + last) // 2
+        if list[middle][key].startswith(value):
+            result_index.append(middle)
+
+            # Cek apakah ada entri yang cocok di sebelah kiri
+            i = middle - 1
+            while i >= 0 and list[i][key].startswith(value):
+                result_index.append(i)
+                i -= 1
+
+            # Cek apakah ada entri yang cocok di sebelah kanan
+            i = middle + 1
+            while i < len(list) and list[i][key].startswith(value):
+                result_index.append(i)
+                i += 1
+
+            for i in result_index:
+                result.append(list[i])
+            return result
+        elif list[middle][key] < value:
+            start = middle + 1
+        else:
+            last = middle - 1
+
+    for i in result_index:
+        print(i)
+        result.append(list[i])
+
+    return result
