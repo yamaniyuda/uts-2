@@ -3,5 +3,5 @@ import tabulate
 
 def main() -> str:
   print(tabulate.tabulate(data.data.getListData(), headers="keys", tablefmt="grid"))
-  print()
+  input()
   return ""
