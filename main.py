@@ -4,6 +4,7 @@ import apps.search_menu
 import apps.show_data_menu
 import apps.sort_menu
 import apps.update_menu
+import helpers.binary_search
 import os
 
 
@@ -18,7 +19,6 @@ def initial() -> None:
             case '5': root_menu = apps.search_menu.main()
             case '6': break
             case  _ : root_menu = apps.main_menu.main()
-        print("kk")
         os.system('cls' if os.name == 'nt' else 'clear')
 
 

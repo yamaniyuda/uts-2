@@ -1,8 +1,39 @@
 {
-  "colleger":  [
-    { "nim": "231112933", "name": "ahd yuda zaki yamani", "place_date_birth": "binjai, 11 11 2004", "major": "teknik informatika", "year": "2024" },
-    { "nim": "231112933", "name": "ahd yuda zaki yamani", "place_date_birth": "binjai, 11 11 2004", "major": "teknik informatika", "year": "2024" },
-    { "nim": "231112933", "name": "ahd yuda zaki yamani", "place_date_birth": "binjai, 11 11 2004", "major": "teknik informatika", "year": "2024" },
-    { "nim": "231112933", "name": "ahd yuda zaki yamani", "place_date_birth": "binjai, 11 11 2004", "major": "teknik informatika", "year": "2024" }
-  ]
+    "colleger": [
+        {
+            "nim": "231112933",
+            "name": "ahd yuda zaki yamani",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2024"
+        },
+        {
+            "nim": "231112933",
+            "name": "ahd yuda zaki yamani",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2024"
+        },
+        {
+            "nim": "231112933",
+            "name": "ahd yuda zaki yamani",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2024"
+        },
+        {
+            "nim": "231112933",
+            "name": "ahd yuda zaki yamani",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "2024"
+        },
+        {
+            "nim": "231111759",
+            "name": "nurihsan febrianto",
+            "place_date_birth": "sedie jadi, 16 februari 2005",
+            "major": "teknik informatika",
+            "year": "2023"
+        }
+    ]
 }

@@ -21,6 +21,8 @@ def addData(new_data) -> None:
     data = json.load(file)
 
   data["colleger"].append(new_data)
+  print(data)
 
-  with open(os.path.join(script_dir, rel_path)) as file:
+  with open(os.path.join(script_dir, rel_path), 'r+') as file:
+    file.seek(0)
     json.dump(data, file, indent=4)
