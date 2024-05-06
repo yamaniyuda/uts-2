@@ -1,6 +1,20 @@
 {
     "colleger": [
         {
+            "nim": "23111123",
+            "name": "refdhi",
+            "place_date_birth": "jawa, 11/11/2021",
+            "major": "teknik informatika",
+            "year": "2021"
+        },
+        {
+            "nim": "231112933",
+            "name": "yamani",
+            "place_date_birth": "kisaran, 11 11 2004",
+            "major": "tekik ifnormatika",
+            "year": "2011"
+        },
+        {
             "nim": "aa",
             "name": "ahmad zakui",
             "place_date_birth": "binjai, 11 11 2004",
@@ -13,13 +27,6 @@
             "place_date_birth": "binjai, 11 11 2004",
             "major": "teknik informatika",
             "year": "1111"
-        },
-        {
-            "nim": "231112933",
-            "name": "yamani",
-            "place_date_birth": "kisaran, 11 11 2004",
-            "major": "tekik ifnormatika",
-            "year": "2011"
         }
     ]
 }
