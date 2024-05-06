@@ -1,25 +1,18 @@
 {
     "colleger": [
         {
-            "nim": "aa",
-            "name": "ahmad zakui",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "2024"
-        },
-        {
-            "nim": "am",
-            "name": "ahmad adi",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "1111"
-        },
-        {
             "nim": "231112933",
             "name": "yamani",
-            "place_date_birth": "kisaran, 11 11 2004",
+            "place_date_birth": "kisaran, 11 november 2004",
             "major": "tekik ifnormatika",
             "year": "2011"
+        },
+        {
+            "nim": "231111759",
+            "name": "nurihsan febrianto",
+            "place_date_birth": "Sedie Jadi, 16 Februari 2005",
+            "major": "teknik informatika",
+            "year": "2023"
         }
     ]
 }
