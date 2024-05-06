@@ -40,9 +40,18 @@ def add_data(new_data) -> None:
         raise ValueError("Data NIM telah ada, gunakan NIM yang lain")
 
     data["colleger"].append(new_data)
+
+    with open(os.path.join(script_dir, rel_path), 'r+') as file:
+        file.seek(0)
+        json.dump(data, file, indent=4)
+
+    with open(os.path.join(script_dir, rel_path)) as file:
+        data = json.load(file)
+
     data["colleger"] = sort_data(Column.YEAR, quict_sort.Sort.DSC)
 
     with open(os.path.join(script_dir, rel_path), 'r+') as file:
+        file.truncate(0)
         file.seek(0)
         json.dump(data, file, indent=4)
 
