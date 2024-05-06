@@ -1,11 +1,14 @@
 def display_menu():
+    print ("="*45)
     print("Aplikasi Data Mahasiswa")
+    print ("="*45)
     print("1. Tambah Data Mahasiswa")
     print("2. Tampilkan Data Mahasiswa")
     print("3. Ubah Data Mahasiswa")
     print("4. Urutkan Data Mahasiswa")
     print("5. Cari Data Mahasiswa")
     print("6. Keluar")
+    print ("="*45)
     print()
 
 def main() -> str:

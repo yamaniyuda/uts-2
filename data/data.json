@@ -8,6 +8,13 @@
             "year": "2024"
         },
         {
+            "nim": "am",
+            "name": "ahmad adi",
+            "place_date_birth": "binjai, 11 11 2004",
+            "major": "teknik informatika",
+            "year": "1111"
+        },
+        {
             "nim": "ab",
             "name": "ahd yuda zaki yamani",
             "place_date_birth": "binjai, 10 11 2004",
@@ -27,13 +34,6 @@
             "place_date_birth": "binjai, 11 11 2004",
             "major": "teknik informatika",
             "year": "2021"
-        },
-        {
-            "nim": "am",
-            "name": "ahmad adi",
-            "place_date_birth": "binjai, 11 11 2004",
-            "major": "teknik informatika",
-            "year": "1111"
         }
     ]
 }
