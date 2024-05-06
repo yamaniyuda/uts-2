@@ -15,23 +15,19 @@ def display_menu():
 def main() -> str:
     display_menu()
     user_input = input(" Jenis pengurutan (Masukkan angka) [1-5] : ")
-    if user_input in ("1", "2", "3", "4", "5"):
-        # Melakukan pengurutan data berdasarkan pilihan pengguna
-        if user_input == "1":
-            sorted_data = sort_data(Column.NIM)
-        elif user_input == "2":
-            sorted_data = sort_data(Column.NAME)
-        elif user_input == "3":
-            sorted_data = sort_data(Column.MAJOR)
-        elif user_input == "4":
-            sorted_data = sort_data(Column.YEAR)
-        else:
-            print("Keluar")
-            return user_input
+    sorted_data = None
 
-        # Cetak data yang sudah diurutkan
-        print(tabulate(sorted_data, headers="keys", tablefmt="heavy_outline"))
-        input()
-    else:
-        print("Input tidak valid. Harap masukkan angka 1-5.")
-        return main()
+    match user_input:
+        case "1": sorted_data = sort_data(Column.NIM)
+        case "2": sorted_data = sort_data(Column.NAME)
+        case "3": sorted_data = sort_data(Column.MAJOR)
+        case "4": sorted_data = sort_data(Column.YEAR)
+        case "5": return None
+        
+    if sorted_data == None:
+        raise ValueError("Inputan tidak valid")
+
+    # header = ["No", "NIM", "Nama", "Tempat Lahir"]
+    print(tabulate(sorted_data, headers="keys", tablefmt="heavy_outline"))
+    input()
+
