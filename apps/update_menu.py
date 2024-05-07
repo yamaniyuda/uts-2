@@ -18,20 +18,11 @@ def update_data_feature(data_source):
   data_update = {
     "nim": prev_data["nim"],
     "name": default_value(prev_data["name"], name, lambda n: n.lower()),
-    "place_date_birth": prev_data["place_date_birth"],
+    "date_birth": default_value(prev_data["date_birth"], date_birth, lambda n: n.lower()),
+    "place_birth": default_value(prev_data["place_birth"], place_birth, lambda n: n.lower()),
     "major": default_value(prev_data["major"], major, lambda n: n.lower()),
     "year": default_value(prev_data["year"], year, lambda n: n.lower()),
   }
-
-  place, date = prev_data["place_date_birth"].strip().split(',')
-
-  if date_birth.strip():
-    data_update["place_date_birth"] = f"{place}, {date_birth}"
-  if place_birth.strip():
-    data_update["place_date_birth"] = f"{place_birth}, {date}"
-  if place_birth.strip() and date_birth.strip():
-    data_update["place_date_birth"] = f"{place_birth}, {date_birth}"
-
 
   data.update_data(data_source[0][0], data_update)
 
@@ -41,7 +32,8 @@ def main() -> str:
   nim = input("NIM mahasiswa yang akan diubah: ")
 
   find_data = data.search_data(data.Column.NIM, nim, data.SearchBy.INDEX_VALUE)
-  rebuild_data = directory.directory_key_values_list(find_data[1][0])
+  keys = ["NIM", "Nama", "Tempat Lahir", "Tanggal Lahir", "Program Studi", "Tahun Masuk"]
+  rebuild_data = directory.directory_key_values_list(find_data[1][0], keys)
 
   table = tabulate(rebuild_data, headers=["Field", "Detail"], tablefmt="heavy_outline")
   print(table)
