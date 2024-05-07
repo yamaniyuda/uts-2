@@ -1,13 +1,14 @@
 import json
 import os
-from helpers import binary_search, quict_sort, default_value
+from helpers import binary_search, quict_sort
 from enum import Enum
 
 
 class Column(Enum):
     NIM = 'nim'
     NAME = 'name'
-    PLACE_DATE_BIRTH = 'place_date_birth'
+    PLACE_BIRTH = 'place_birth'
+    DATE_BIRTH = 'date_birth'
     MAJOR = 'major'
     YEAR = 'year'
 
@@ -18,15 +19,22 @@ class SearchBy(Enum):
     INDEX_VALUE = 'index_value'
 
 
-def get_list_data() -> set:
+def get_list_data(except_column: list[Column] = []) -> set:
     script_dir = os.path.dirname(__file__)
     rel_path = 'data.json'
 
     f = open(os.path.join(script_dir, rel_path))
-    data = json.load(f)["colleger"]
+    data = json.load(f)["colleger"] 
+    result = []
+
+    for dt in data:
+        if len(except_column) > 0:
+            for j in except_column:
+                dt.pop(j.value)
+        result.append(dt)
 
     f.close()
-    return data
+    return result
 
 
 def add_data(new_data) -> None:
@@ -75,8 +83,8 @@ def update_data(index, value):
         json.dump(data_source, file, indent=4)
 
 
-def sort_data(column: Column, sort: quict_sort.Sort = quict_sort.Sort.ASC) -> list:
-    return quict_sort.quicksort(get_list_data(), column.value, sort)
+def sort_data(column: Column, sort: quict_sort.Sort = quict_sort.Sort.ASC, except_column: list[Column] = []) -> list:
+    return quict_sort.quicksort(get_list_data(except_column), column.value, sort)
 
 
 def search_data(column: Column, value: str, search_by: SearchBy = SearchBy.VALUE):
