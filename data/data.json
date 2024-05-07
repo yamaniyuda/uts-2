@@ -1,18 +1,18 @@
 {
     "colleger": [
         {
-            "nim": "231112933",
-            "name": "yamani",
-            "place_date_birth": "kisaran, 11 november 2004",
-            "major": "tekik ifnormatika",
-            "year": "2011"
-        },
-        {
             "nim": "231111759",
             "name": "nurihsan febrianto",
             "place_date_birth": "Sedie Jadi, 16 Februari 2005",
             "major": "teknik informatika",
             "year": "2023"
+        },
+        {
+            "nim": "231112933",
+            "name": "yamani",
+            "place_date_birth": "kisaran, 11 november 2004",
+            "major": "tekik ifnormatika",
+            "year": "2011"
         }
     ]
 }
