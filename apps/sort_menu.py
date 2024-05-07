@@ -33,4 +33,4 @@ def main() -> str:
     sorted_data = directory.directory_list_to_list(sorted_data)
     print(tabulate(sorted_data, headers=headers, tablefmt="heavy_outline"))
     input()
-
+    

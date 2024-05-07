@@ -18,8 +18,8 @@ def add_feture_handle() -> None:
   data.data.add_data({
     "nim": nim.lower(),
     "name": name.lower(),
-    "date_birth": date_birth.lower(),
     "place_birth": place_birth.lower(),
+    "date_birth": date_birth.lower(),
     "major": major.lower(),
     "year": year.lower()
   })

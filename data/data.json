@@ -3,7 +3,8 @@
         {
             "nim": "231112933",
             "name": "yamani",
-            "place_date_birth": "kisaran, 11 11 2004",
+            "place_birth": "kisaran",
+            "date_birth": "11 11 2004",
             "major": "tekik ifnormatika",
             "year": "2011"
         },

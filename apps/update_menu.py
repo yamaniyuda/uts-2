@@ -18,8 +18,8 @@ def update_data_feature(data_source):
   data_update = {
     "nim": prev_data["nim"],
     "name": default_value(prev_data["name"], name, lambda n: n.lower()),
-    "date_birth": default_value(prev_data["date_birth"], date_birth, lambda n: n.lower()),
     "place_birth": default_value(prev_data["place_birth"], place_birth, lambda n: n.lower()),
+    "date_birth": default_value(prev_data["date_birth"], date_birth, lambda n: n.lower()),
     "major": default_value(prev_data["major"], major, lambda n: n.lower()),
     "year": default_value(prev_data["year"], year, lambda n: n.lower()),
   }
