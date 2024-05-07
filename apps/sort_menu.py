@@ -1,4 +1,5 @@
 from data.data import sort_data, Column
+from helpers import quict_sort, directory
 from tabulate import tabulate
 
 
@@ -27,7 +28,8 @@ def main() -> str:
     if sorted_data == None:
         raise ValueError("Inputan tidak valid")
 
-    # header = ["No", "NIM", "Nama", "Tempat Lahir"]
-    print(tabulate(sorted_data, headers="keys", tablefmt="heavy_outline"))
+    headers = ["No", "NIM", "Nama", "Tempat Lahir", "Tanggal Lahir", "Program Studi", "Tahun Masuk"]
+    sorted_data = directory.directory_list_to_list(sorted_data, True)
+    print(tabulate(sorted_data, headers=headers, tablefmt="heavy_outline"))
     input()
-
+    
