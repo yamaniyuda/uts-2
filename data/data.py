@@ -5,22 +5,22 @@ from enum import Enum
 
 
 class Column(Enum):
-    NIM = 'nim'
-    NAME = 'name'
-    PLACE_DATE_BIRTH = 'place_date_birth'
-    MAJOR = 'major'
-    YEAR = 'year'
+    NIM = "nim"
+    NAME = "name"
+    PLACE_DATE_BIRTH = "place_date_birth"
+    MAJOR = "major"
+    YEAR = "year"
 
 
 class SearchBy(Enum):
-    INDEX = 'index'
-    VALUE = 'value'
-    INDEX_VALUE = 'index_value'
+    INDEX = "index"
+    VALUE = "value"
+    INDEX_VALUE = "index_value"
 
 
 def get_list_data() -> set:
     script_dir = os.path.dirname(__file__)
-    rel_path = 'data.json'
+    rel_path = "data.json"
 
     f = open(os.path.join(script_dir, rel_path))
     data = json.load(f)["colleger"]
@@ -31,7 +31,7 @@ def get_list_data() -> set:
 
 def add_data(new_data) -> None:
     script_dir = os.path.dirname(__file__)
-    rel_path = 'data.json'
+    rel_path = "data.json"
 
     with open(os.path.join(script_dir, rel_path)) as file:
         data = json.load(file)
@@ -41,7 +41,7 @@ def add_data(new_data) -> None:
 
     data["colleger"].append(new_data)
 
-    with open(os.path.join(script_dir, rel_path), 'r+') as file:
+    with open(os.path.join(script_dir, rel_path), "r+") as file:
         file.seek(0)
         json.dump(data, file, indent=4)
 
@@ -50,7 +50,7 @@ def add_data(new_data) -> None:
 
     data["colleger"] = sort_data(Column.YEAR, quict_sort.Sort.DSC)
 
-    with open(os.path.join(script_dir, rel_path), 'r+') as file:
+    with open(os.path.join(script_dir, rel_path), "r+") as file:
         file.truncate(0)
         file.seek(0)
         json.dump(data, file, indent=4)
@@ -58,7 +58,7 @@ def add_data(new_data) -> None:
 
 def update_data(index, value):
     script_dir = os.path.dirname(__file__)
-    rel_path = 'data.json'
+    rel_path = "data.json"
 
     data = sort_data(Column.NIM)
     data[index] = value
@@ -67,9 +67,8 @@ def update_data(index, value):
         data_source = json.load(file)
 
     data_source["colleger"] = data
-    
 
-    with open(os.path.join(script_dir, rel_path), 'r+') as file:
+    with open(os.path.join(script_dir, rel_path), "r+") as file:
         file.truncate(0)
         file.seek(0)
         json.dump(data_source, file, indent=4)
